@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="296dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="99dp"
+        android:theme="@style/customstyle"
+        android:text="@string/marsweightTitle"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/enterweightEDt"
+        android:layout_width="192dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="99dp"
+        android:textSize="20sp"
+        android:ems="10"
+        android:hint="@string/enterweight"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/resultTxt"
+        android:layout_width="317dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="44dp"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calcWeightButton"
+        app:layout_constraintVertical_bias="0.007" />
+
+    <Button
+        android:id="@+id/calcWeightButton"
+        android:layout_width="240dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="93dp"
+        android:text="@string/weightbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterweightEDt" />
+
+    <CheckBox
+        android:id="@+id/MarscheckBox"
+        android:layout_width="96dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="15dp"
+        android:text="@string/mars"
+        app:layout_constraintBottom_toBottomOf="@+id/VenusCheckBox"
+        app:layout_constraintEnd_toStartOf="@+id/VenusCheckBox"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.906" />
+
+    <CheckBox
+        android:id="@+id/VenusCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        android:text="@string/venus"
+        app:layout_constraintBottom_toTopOf="@+id/enterweightEDt"
+        app:layout_constraintEnd_toStartOf="@+id/JupitercheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <CheckBox
+        android:id="@+id/JupitercheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:text="@string/jupiter"
+        app:layout_constraintBottom_toBottomOf="@+id/VenusCheckBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/VenusCheckBox"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

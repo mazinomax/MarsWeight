@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MarsWeight</string>
+    <string name="marsweightTitle">Whats Your Weight In Mars</string>
+    <string name="enterweight"> Please Enter Weight </string>
+    <string name="weightbutton"> Calculate Weight </string>
+    <string name="mars">MARS</string>
+    <string name="venus">VENUS</string>
+    <string name="jupiter">JUPITER</string>
+</resources>
