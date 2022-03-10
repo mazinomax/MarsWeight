@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         
         when (checkbox.id) {
             R.id.JupitercheckBox -> {result =weight * jupiterweight
-                                       resultTxt.text = "Weight is " + result.format(2) + " in Jupiter."}
+                                       resultTxt.text = "Weight is " + result.format(2) + " in Jupiterrs."}
             R.id.VenusCheckBox -> {result = weight * venusWeight
                                        resultTxt.text = "Weight is " + result.format(2) + " in Venus."}
             R.id.MarscheckBox -> {result = weight * marsWeight
